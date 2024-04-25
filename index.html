@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <nav>
+        <h1>MeNotes.</h1>
+        <div class="searchCreate">
+            <input type="text" placeholder="Search Your note" id="searchNote">
+            <button id="show">Create</button>
+            <button id="Search">Search</button>
+        </div>
+        <div class="featureArea">
+            <h4 id="bold">B</h4>
+            <h4 id="italics">I</h4>
+            <h4 id="underline">U</h4>
+            <select id="fontSizes">
+            </select>
+            <label for="color" class="fontColorLabel">A</label>
+            <select id="fontColor"></select>
+            <div class="colorArea"></div>
+        </div>
+    </nav>
+    <main>
+        <div class="createNote">
+            <form class="TitleForm">
+                <label for="title">Enter Title:</label>
+                <input type="text" placeholder="Enter The Title" id="title" required>
+                <label for="Description">Enter Description:</label>
+                <textarea id="Thoughts" cols="30" rows="10" placeholder="Enter About Title" required></textarea>
+                <div class="buttons">
+                <button type="submit" id="create">Create</button>
+                <button type="button" id="cancel">Close</button>
+            </div>
+            </form>
+        </div>
+        <div class="allNotes">
+            
+        </div>
+    </main>
+
+</div>
+<div class="popup">
+    <h2>Edit The Text</h2>
+    <form class="popupForm">
+        <label for="title">Title :</label>
+        <input type="text" placeholder="Edit your Title" id="editTitle" required>
+        <label for="description">Write Title :</label>
+        <textarea id="Thoughts2" cols="30" rows="10" placeholder="Enter About Title" required></textarea>
+        <div class="buttons2">
+        <button type="submit" id="create2">Edit</button>
+        <button type="button" id="cancel2">Cancel</button>
+    </div>
+    </form>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
